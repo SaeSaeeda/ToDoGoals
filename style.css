@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #1d080a;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(168, 146, 130);
+    background: linear-gradient(circle, rgba(168, 146, 130, 1) 40%, rgba(131, 101, 90, 1) 100%);
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hobbies,
+.wellness,
+.dates,
+.financial,
+.travel,
+.selfcare {
+    width: calc(33.33% - 20px);
+    border: 1px solid grey;
+    text-align: center;
+    min-height: 200px;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    background: #fde6e8;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    flex: 2;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: #744b33;
+    color: #fde6e8;
+    cursor: pointer;
+    padding: 16px 20px;
+    border-radius: 30px;
+    flex: 1;
+    margin-left: 10px; 
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 30px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+
+ul li::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+
+ul li.checked {
+    color: #fff;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(checked.png);
+}
+
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+ul li span:hover {
+    background: #fde6e8;
+    color: #744b33;
+    border-radius: 50%;
+}

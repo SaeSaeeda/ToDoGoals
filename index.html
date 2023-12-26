@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>2024 Goals</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hobbies">
+                <h2>Hobbies Goals</h2>
+                <div class="row">
+                    <input type="text" id="hobbies-input-box" placeholder="What hobbies do you want to do">
+                    <button onclick="addTask('hobbies-input-box')"> Add</button>
+                </div>
+                <ul id="hobbies-list"></ul>
+            </div>
+            <div class="wellness">
+                <h2>Wellness Goals</h2>
+                <div class="row">
+                    <input type="text" id="wellness-input-box" placeholder="What wellness activities do you want to do">
+                    <button onclick="addTask('wellness-input-box')"> Add</button>
+                </div>
+                <ul id="wellness-list"></ul>
+            </div>
+            <div class="dates">
+                <h2>Date Goals</h2>
+                <div class="row">
+                    <input type="text" id="dates-input-box" placeholder="What dates do you want to plan">
+                    <button onclick="addTask('dates-input-box')"> Add</button>
+                </div> 
+                <ul id="dates-list"></ul>
+            </div>
+            <div class="financial">
+                <h2>Financial Goals</h2>
+                <div class="row">
+                    <input type="text" id="financial-input-box" placeholder="What financial goals do you want to achieve">
+                    <button onclick="addTask('financial-input-box')"> Add</button>
+                </div>
+                <ul id="financial-list"></ul>
+            </div>
+            <div class="travel">
+                <h2>Travel Goals</h2>
+                <div class="row">
+                    <input type="text" id="travel-input-box" placeholder="What travel plans do you have">
+                    <button onclick="addTask('travel-input-box')"> Add</button>
+                </div>    
+                <ul id="travel-list"></ul>
+            </div>
+            <div class="selfcare">
+                <h2>Selfcare Goals</h2>
+                <div class="row">
+                    <input type="text" id="selfcare-input-box" placeholder="What selfcare activities do you want to do">
+                    <button onclick="addTask('selfcare-input-box')"> Add</button>
+                </div>
+                <ul id="selfcare-list"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
