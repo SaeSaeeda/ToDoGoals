@@ -5,8 +5,9 @@ travel, and self-care, the data will be save in the local storage and you can ti
 
 ## Table of Contents
 - [Features](#features)
-- [Demo](#demo)
 - [Parts](#parts)
+- [Demo](#demo)
+
   
 
 ## Features
