@@ -9,8 +9,8 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background: rgb(168, 146, 130);
-    background: linear-gradient(circle, rgba(168, 146, 130, 1) 40%, rgba(131, 101, 90, 1) 100%);
+    background: rgb(184, 166, 152);
+    background: linear-gradient(circle, rgb(152, 124, 103) 40%, rgb(188, 163, 154) 100%);
     padding: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +25,7 @@
 .selfcare {
     width: calc(33.33% - 20px);
     border: 1px solid grey;
+    border-width: 2px;
     text-align: center;
     min-height: 200px;
     height: auto;
@@ -40,13 +41,14 @@
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 20px;
-    background: #fde6e8;
+    background: #e8dbdc;
 }
 
 h2 {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+    color: #744b33;
 }
 
 input {
@@ -61,7 +63,7 @@ button {
     border: none;
     outline: none;
     background: #744b33;
-    color: #fde6e8;
+    color: #e8dbdc;
     cursor: pointer;
     padding: 16px 20px;
     border-radius: 30px;
@@ -95,7 +97,7 @@ ul li::before {
 
 
 ul li.checked {
-    color: #fff;
+    color: #e8dbdc;
     text-decoration: line-through;
 }
 
@@ -111,7 +113,7 @@ ul li span{
     width: 40px;
     height: 40px;
     font-size: 22px;
-    color: #fff;
+    color: #e8dbdc;
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
@@ -123,3 +125,37 @@ ul li span:hover {
     color: #744b33;
     border-radius: 50%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .hobbies,
+    .wellness,
+    .dates,
+    .financial,
+    .travel,
+    .selfcare {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        justify-content: space-around;
+    }
+
+    .hobbies,
+    .wellness,
+    .dates,
+    .financial,
+    .travel,
+    .selfcare {
+        width: calc(50% - 20px);
+        margin-right: 0;
+    }
+}
+
